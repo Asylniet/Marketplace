@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main flex">
+        <div class="image_area">
+            <div>
+                <img src="/assets/images/login_1.png" alt="Login image" data-speed="-3" class="parallax">
+                <img src="/assets/images/login_2.png" alt="Login image" data-speed="2" class="parallax">
+                <img src="/assets/images/login_3.png" alt="Login image" data-speed="5" class="parallax">
+            </div>
+        </div>
+        <div class="form_area column">
+            <div class="form_area_container">
+                <h2>
+                    Авторизация
+                </h2>
+                <form action="/route/main.html" class="flex column">
+                    <div class="error">
+                        Данные некорректны
+                    </div>
+                    <input type="tel" placeholder="+7 (" id="phone"  autocomplete="off" max="18" onkeypress="return event.charCode > 47 && event.charCode < 58;">
+                    
+                    <div class="rel">
+                        <div class="eye">
+                            <img src="/assets/icons/eye-closed.svg" alt="View password" id="eye">
+                        </div>
+                        <input type="password" placeholder="Пароль" id="password" >
+                    </div>
+                    
+                    <button type="submit" disabled main>
+                        Войти
+                    </button>
+                </form>
+                <a href="pass_forget.html">Забыли пароль?</a>
+                <div class="line"></div>
+            </div>
+            <a href="/route/sign-up.html" class="button">
+                Регистрация
+            </a>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html>
