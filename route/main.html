@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="flex column card">
+            <input type="text">
+        </div>
+        <header>
+            <div class="header_wrapper flex">
+                <div class="flex">
+                    <div class="logo">
+                        LOGO
+                    </div>
+                    <div class="seperate"></div>
+                    <a href="#">Главная</a>
+                    <a href="#">Тарифы</a>
+                </div>
+                <a href="/index.html">Выйти</a>
+            </div>
+        </header>
+        <div class="content flex column">
+            <h2>Добро пожаловать в CompanyName</h2>
+            <h4>CompanyName - это ваша удобная платформа по увеличению продаж на маркетплейсах</h4>
+            <div class="flex cards">
+                <di2v class="card_wrapper flex wrap">
+                    <div class="card flex column kaspi">
+                        <img src="/assets/images/kaspi.jpg" alt="Добавить каспи магазин">
+                    </div>
+                    <div class="card flex column halyk">
+                        <img src="/assets/images/halyk.jpg" alt="Добавить халык маркет">
+                    </div>
+                    <div class="card flex column jusan">
+                        <img src="/assets/images/jusan.jpg" alt="Добавить жусан маркет">
+                    </div>
+                    <div class="card flex column forte">
+                        <img src="/assets/images/forte.jpg" alt="Добавить форте маркет">
+                    </div>
+                    <div class="card flex column add_bank">
+                        <span class="plus">+</span>
+                        <span>Добавить магазин</span>
+                    </div>
+                </di2v>
+            </div>
+        </div>
+        <div class="popup flex">
+            <div class="popup_content">
+                <form action="">
+                    <label for="login">Логин продавца</label>
+                    <input type="text" name="login">
+                    <label for="pass">Пароль продавца</label>
+                    <input type="text" name="pass">
+                    <div class="tooltip_hover">
+                        Для чего это?
+                        <div class="tooltip invisible">
+                            CompanyName работает как ваш менеджер, проверяет товары и управляет ценой прямо из кабинета продавца. Поэтому CompanyName необходимо авторизоваться в вашем магазине, используя ваш логин и пароль. <br> <br>
+    
+                            Не переживайте, мы ничего не удалим и не передадим информацию третьим лицам. Мы понимаем вашу заботу о безопасности и конфиденциальности и поэтому все ваши данные шифруем и не передаём третьим сторонам. <br> <br>
+    
+                            Без авторизации CompanyName просто не сможет вам помочь автоматизировать автообновление цены :)
+                        </div>
+                    </div>
+                    <button type="submit" main>
+                        Добавить
+                    </button>
+                </form>
+                <div class="close_container flex">
+                    <div class="close"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
