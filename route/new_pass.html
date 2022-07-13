@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Войти</title>
+    <title>Новый пароль</title>
 
     <link rel="stylesheet" href="/css/style.css">
 
@@ -16,50 +16,53 @@
     <div class="main flex">
         <div class="image_area">
             <div>
-                <img src="/assets/images/login_1.png" alt="Login image" data-speed="-3" class="parallax">
-                <img src="/assets/images/login_2.png" alt="Login image" data-speed="2" class="parallax">
-                <img src="/assets/images/login_3.png" alt="Login image" data-speed="5" class="parallax">
+                <img src="/assets/images/verification_1.png" alt="Login image" data-speed="-3" class="parallax">
+                <img src="/assets/images/signup_2.png" alt="Login image" data-speed="2" class="parallax">
+                <img src="/assets/images/verification_3.png" alt="Login image" data-speed="5" class="parallax">
             </div>
         </div>
         <div class="form_area column">
             <div class="form_area_container">
                 <h2>
-                    Авторизация
+                    Новый пароль
                 </h2>
                 <form action="/route/main.html" class="flex column">
                     <div class="error">
-                        Данные некорректны
-                    </div>
-
-                    <div class="input">
-                        <input type="tel" placeholder="+7 (" id="phone"  autocomplete="off" max="18" onkeypress="return event.charCode > 47 && event.charCode < 58;">
-                    </div>
-                    
+                        Пароли не совпадают
+                    </div>                    
                     <div class="rel input">
                         <div class="eye">
                             <img src="/assets/icons/eye-closed.svg" alt="View password" id="eye">
                         </div>
                         <input type="password" placeholder="Пароль" id="password" >
                     </div>
+
+                    <div class="tips">
+                        <ul>
+                            <li>Маленькая буква [a-z]</li>
+                            <li>Заглавная буква [A-Z]</li>
+                            <li>Число [0-9]</li>
+                            <li>Символ [!@#$%^&*]</li>
+                            <li>Минимум 10 символов</li>
+                        </ul>
+                    </div>
+
+                    <div class="input">
+                        <input type="password" placeholder="Повторите пароль" id="password2" >
+                    </div>
                     
                     <button type="submit" disabled main>
-                        Войти
+                        Обновить пароль
                     </button>
                 </form>
-                <a href="/route/forgot_pass.html">Забыли пароль?</a>
                 <div class="line"></div>
             </div>
-            <a href="/route/sign-up.html" class="button">
-                Регистрация
+            <a href="/index.html" class="button">
+                Войти
             </a>
         </div>
     </div>
     <script src="/js/index.js"></script>
-    <script src="/js/login.js"></script>
+    <script src="/js/new_pass.js"></script>
 </body>
 </html>
-
-<p> <!-- Открывающий тег -->
-    
-</p> <!-- Закрывающий тег -->
-

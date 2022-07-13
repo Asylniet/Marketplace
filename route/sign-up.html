@@ -26,20 +26,37 @@
                 <h2>
                     Регистрация
                 </h2>
-                <form action="/route/main.html" class="flex column">
+                <form action="/route/verification.html" class="flex column">
                     <div class="error">
                         Пароли не совпадают
                     </div>
-                    <input type="tel" onkeypress="return event.charCode > 47 && event.charCode < 58;" placeholder="+7 (" id="phone"  autocomplete="off" max="18">
+                    <div class="input">
+                        <input type="text" placeholder="Имя" id="name"  autocomplete="off">
+                    </div>
+                    <div class="input">
+                        <input type="tel" onkeypress="return event.charCode > 47 && event.charCode < 58;" placeholder="+7 (" id="phone"  autocomplete="off" max="18">
+                    </div>
                     
-                    <div class="rel">
+                    <div class="rel input">
                         <div class="eye">
                             <img src="/assets/icons/eye-closed.svg" alt="View password" id="eye">
                         </div>
                         <input type="password" placeholder="Пароль" id="password" >
                     </div>
 
-                    <input type="password" placeholder="Повторите пароль" id="password2" >
+                    <div class="tips">
+                        <ul>
+                            <li>Маленькая буква [a-z]</li>
+                            <li>Заглавная буква [A-Z]</li>
+                            <li>Число [0-9]</li>
+                            <li>Символ [!@#$%^&*]</li>
+                            <li>Минимум 10 символов</li>
+                        </ul>
+                    </div>
+
+                    <div class="input">
+                        <input type="password" placeholder="Повторите пароль" id="password2" >
+                    </div>
                     
                     <button type="submit" disabled main>
                         Регистрация
