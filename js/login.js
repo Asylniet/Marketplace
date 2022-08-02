@@ -1,6 +1,6 @@
 errors = [false, false, true]; //for [phone, pass, pass2]
 password_strength = [false, false, false, false, false]; // for [small, big, number, spec_char, length]
-let button = document.getElementById("login_btn");
+let button = document.getElementById("login_btn") || document.querySelector('button');
 let name_input = document.getElementById("name");
 let phone_input = document.getElementById("phone");
 let password_input = document.getElementById("password");
@@ -11,13 +11,6 @@ let deleting = false;
 
 let phone = "+7 (777) 777 77 77";
 let password = "Asylniet";
-
-document.getElementById("close_demo").addEventListener("click", function () {
-  document.querySelector(".demo_window").classList.add("invisible");
-  setTimeout(() => {
-    document.querySelector(".demo_window").style.display = "none";
-  }, 200);
-});
 
 function buttonCheck() {
   if (password_check_input != null) {
@@ -184,6 +177,14 @@ window.addEventListener("load", function () {
   }
 
   if (password_check_input == null) {
+    document
+      .getElementById("close_demo")
+      .addEventListener("click", function () {
+        document.querySelector(".demo_window").classList.add("invisible");
+        setTimeout(() => {
+          document.querySelector(".demo_window").style.display = "none";
+        }, 200);
+      });
     document.querySelector("form").addEventListener("submit", function (e) {
       if (password_input.value != password || phone_input.value != phone) {
         e.preventDefault();
