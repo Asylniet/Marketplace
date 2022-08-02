@@ -14,6 +14,19 @@
 </head>
 <body>
     <div class="main flex">
+        <div class="demo_window flex">
+            <div class="demo_window_wrapper flex column">
+                <h2>
+                    Это демонстративная версия сайта (только Front-end)
+                </h2>
+                <h4>
+                    Все номера для успешного прохождения проверок +7 (777) 777 77 77, все пароли 'Asylniet'. Вводите эти данные если хотите пройти, иначе система укажет на ошибку
+                </h4>
+                <button main id="close_demo">
+                    Закрыть
+                </button>
+            </div>
+        </div>
         <div class="image_area">
             <div>
                 <img src="/assets/images/login_1.png" alt="Login image" data-speed="-3" class="parallax">
@@ -42,7 +55,7 @@
                         <input type="password" placeholder="Пароль" id="password" >
                     </div>
                     
-                    <button type="submit" disabled main>
+                    <button type="submit" disabled main id="login_btn">
                         Войти
                     </button>
                 </form>
@@ -58,8 +71,3 @@
     <script src="/js/login.js"></script>
 </body>
 </html>
-
-<p> <!-- Открывающий тег -->
-    
-</p> <!-- Закрывающий тег -->
-
